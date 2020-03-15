@@ -5,7 +5,12 @@ const { Nuxt, Builder } = require(path.resolve(process.cwd(), 'node_modules/nuxt
 
 (async () => {
 	try {
-	    const config = require(path.resolve(process.cwd(), 'config/nuxt.js'));
+	    const config = {
+	        ...require(path.resolve(process.cwd(), 'config/nuxt.js'))
+        };
+
+	    config.modules = [];
+	    config.buildModules = [];
 
 	    const builder = new Builder(new Nuxt(config));
 
