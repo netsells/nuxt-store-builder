@@ -1,0 +1,15 @@
+{
+    "name": "@netsells/nuxt-store-builder",
+    "version": "0.1.0",
+    "main": "index.js",
+    "license": "MIT",
+    "bin": {
+        "nuxt-store-builder": "./index.js"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "files": [
+        "index.js"
+    ]
+}
